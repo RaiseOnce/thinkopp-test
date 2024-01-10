@@ -1,0 +1,29 @@
+@import '../../sass/base';
+
+.btns {
+  margin: 42px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  display: block;
+  background-color: $color-transperent;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 100px;
+
+  svg {
+    position: relative !important;
+    fill: $color-gray-light;
+    stroke: $color-gray-light;
+    display: block;
+  }
+
+  &:hover svg {
+    fill: $color-gray-medium;
+    stroke: $color-gray-medium;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../sass/base';
+
+.container {
+  width: 100%;
+  display: block;
+
+  &:hover .header {
+    color: $color-green;
+  }
+}
+
+.img {
+  object-fit: cover;
+  height: 344px;
+  width: 100%;
+}
+
+.header {
+  @include font-size(28px, 28px);
+  font-weight: 600;
+  color: $color-gray-dark;
+}
+
+.subheader {
+  @include font-size(18px, 18px);
+  font-weight: 500;
+  color: $color-gray-medium;
+}

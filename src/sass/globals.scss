@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  background-color: $color-bg;
 }
 
 a {
@@ -21,4 +22,24 @@ a {
   padding: 0 60px;
   @include col;
   justify-content: space-between;
+}
+
+.types__1 {
+  border-radius: 220px 0px 220px 0px;
+}
+
+.types__2 {
+  border-radius: 100%;
+}
+
+.types__3 {
+  border-radius: 0px 220px 0px 220px;
+}
+
+.types__4 {
+  border-radius: 100%;
+}
+
+.types__5 {
+  border-radius: 220px 0px 220px 0px;
 }

@@ -1,1 +1,15 @@
 @import '../sass/base';
+
+.header {
+  @include font-size(72px, 70px);
+  font-weight: 700;
+  color: $color-gray-medium;
+}
+
+.subheader {
+  max-width: 860px;
+  width: 100%;
+  @include font-size(24px, 32px);
+  font-weight: 400;
+  color: $color-black;
+}
