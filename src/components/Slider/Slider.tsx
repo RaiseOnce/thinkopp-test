@@ -8,7 +8,22 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import SwiperNav from '../SwiperNav/SwiperNav'
 
-const Slider = ({ slides }: any) => {
+const Slider = ({ slides, shapes }: any) => {
+  const randomNoRepeats = (array: any) => {
+    let copy = array.slice(0)
+    return function () {
+      if (copy.length < 1) {
+        copy = array.slice(0)
+      }
+      let index = Math.floor(Math.random() * copy.length)
+      let item = copy[index]
+      copy.splice(index, 1)
+      return item
+    }
+  }
+
+  const randomShape = randomNoRepeats(shapes)
+
   return (
     <div>
       <Swiper spaceBetween={0} slidesPerView={'auto'} modules={[Navigation]}>
@@ -24,6 +39,7 @@ const Slider = ({ slides }: any) => {
                 src={slide.img}
                 alt=""
                 className={[styles.img, slide.types].join(' ')}
+                style={randomShape()}
               />
               <h2 className={styles.header}>{slide.title}</h2>
               <div className={styles.subheader}>{slide.date}</div>

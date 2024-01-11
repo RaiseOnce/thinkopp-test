@@ -3,6 +3,12 @@ import styles from './page.module.scss'
 import data from '@/constants/mockData'
 
 export default function Home() {
+  const shapes = [
+    { borderRadius: '220px 0px 220px 0px' },
+    { borderRadius: '100%' },
+    { borderRadius: '0px 220px 0px 220px' },
+  ]
+
   return (
     <main className={styles.main}>
       <div className="container">
@@ -14,7 +20,7 @@ export default function Home() {
         </h3>
       </div>
 
-      <Slider slides={data} />
+      <Slider slides={data} shapes={shapes} />
     </main>
   )
 }
