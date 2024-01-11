@@ -20,6 +20,9 @@
     fill: $color-gray-light;
     stroke: $color-gray-light;
     display: block;
+
+    transition: fill ease 0.2s;
+    transition: stroke ease 0.2s;
   }
 
   &:hover svg {

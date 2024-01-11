@@ -20,12 +20,12 @@ const Arrow = (props: any) => (
     <path
       d="M12 12V12C12 18.0751 7.07513 23 0.999998 23L-1.33918e-06 23"
       // stroke="#C9D0E1"
-      stroke-width="3"
+      strokeWidth="3"
     />
     <path
       d="M12 35V35C12 28.9249 7.07513 24 1 24L6.11999e-07 24"
       // stroke="#C9D0E1"
-      stroke-width="3"
+      strokeWidth="3"
     />
   </svg>
 )
